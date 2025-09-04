@@ -1,0 +1,274 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+}
+
+/* 공통요소 */
+:root {
+    --color-black01: #111;
+    --color-black02: #000;
+    --color-gray00: #555;
+    --color-gray01: #767676;
+    --color-gray02: #e5e5e5;
+    --color-gray03: #f2f2f2;
+    --color-white: #fff;
+    --color-point01: #ff7029;
+    --color-point02: #035060;
+    --color-point03: #d1eeec;
+    --color-point04: #ffebd0;
+    --color-point05: #b9dd93;
+    --fontSize-title: 3.25rem;
+    --fontSize-h2: 1.25rem;
+    --fontSize-h3: 2rem;
+    --fontSize-p01: 1.5rem;
+    --fontSize-p02: 1.25rem;
+    --fontSize-button: 1rem;
+    --fontSize-a: 0.938rem;
+    --lineHeight-120: 1.2;
+    --lineHeight-140: 1.4;
+    --lineHeight-160: 1.6;
+    --border-radius: 1.25rem;
+    /* 20px */
+    --margin-bottom: 7.5rem;
+    /* 120px */
+}
+
+body {
+    color: var(--color-black01);
+    letter-spacing: -0.5px;
+}
+
+.inner {
+    max-width: 90rem;
+    /* 1440px */
+    margin: 0 auto;
+}
+
+p.mainTitle {
+    font-family: 'SBAggroM';
+    font-size: var(--fontSize-title);
+    line-height: var(--lineHeight-120);
+}
+
+h2 {
+    font-size: var(--fontSize-h2);
+    font-weight: 600;
+    line-height: var(--lineHeight-140);
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: var(--fontSize-h3);
+    line-height: var(--lineHeight-140);
+}
+
+p.title {
+    font-size: var(--fontSize-p01);
+    line-height: var(--lineHeight-140);
+}
+
+p.text {
+    font-size: var(--fontSize-p02);
+    line-height: var(--lineHeight-160);
+}
+
+p.noteText {
+    font-size: var(--fontSize-button);
+    line-height: var(--lineHeight-120);
+}
+
+p.subText {
+    font-size: var(--fontSize-a);
+    line-height: var(--lineHeight-120);
+}
+
+/* 기본 버튼 스타일 */
+button.btn_click {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    width: 7.188rem;
+    height: 2.813rem;
+    font-size: var(--fontSize-button);
+    line-height: var(--lineHeight-120);
+    letter-spacing: -0.5px;
+    background-color: transparent;
+    border: 1px solid var(--color-black01);
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+button.btn_click:hover {
+    background-color: var(--color-point01);
+}
+
+span.tag {
+    font-size: var(--fontSize-a);
+    line-height: var(--lineHeight-120);
+}
+
+/* 아래부터 작업해주세요 */
+/* -------------- 로그인페이지 ------------- */
+main#login {
+    max-width: 100%;
+    width: 100%;
+    height: calc(100vh - 5rem);
+    padding-top: var(--margin-bottom);
+    padding-bottom: var(--margin-bottom);
+    /* 80px */
+}
+
+#login form {
+    width: 28.125rem;
+    /* 450px */
+    margin: 0 auto;
+}
+
+#login fieldset {
+    width: 100%;
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    min-inline-size: min-content;
+}
+
+#login legend {
+    margin-bottom: 2.5rem;
+    /* 40px */
+    text-align: center;
+    font-size: var(--fontSize-h3);
+    line-height: var(--lineHeight-140);
+}
+
+#login input {
+    width: 28.125rem;
+    /* 450px */
+    height: 3.75rem;
+    /* 60px */
+    background-color: var(--color-gray02);
+    border-radius: 0.625rem;
+    /* 10px */
+    padding-left: 0.625rem;
+    box-sizing: border-box;
+    margin-bottom: 0.625rem;
+    border: 1px solid #cdcdcd;
+}
+
+#login input.on {
+    background-color: var(--color-white);
+    border-color: var(--color-point01);
+}
+
+#login div.login_idSaveBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-gray01);
+    font-size: 0.827rem; /* 14px */
+}
+#login label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    vertical-align: -3px;
+}
+
+#login label input[type="radio"]:checked {
+    accent-color: #EA580F;
+}
+
+#login div.login_idSaveBox>div>span {
+    color: var(--color-gray02);
+}
+
+#login div.login_idSaveBox > div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#login button.loginBtn {
+    width: 100%;
+    height: 3.75rem;
+    /* 60px */
+    background-color: var(--color-point02);
+    border-radius: 0.625rem;
+    /* 10px */
+    font-size: var(--fontSize-button);
+    color: var(--color-white);
+    line-height: var(--lineHeight-120);
+    margin-bottom: 1.875rem;
+    /* 30px */
+}
+
+#login p.noteText {
+    position: relative;
+    color: var(--color-gray01);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.875rem;
+    /* 30px */
+}
+
+#login p.noteText::after,
+#login p.noteText::before {
+    position: absolute;
+    content: '';
+    width: 9.375rem;
+    /* 150px */
+    height: 1px;
+    background-color: var(--color-gray02);
+}
+
+#login p.noteText::after {
+    top: 50%;
+    right: 0;
+}
+
+#login p.noteText::before {
+    top: 50%;
+    left: 0;
+}
+
+#login div.login_snsIco {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    /* 40px */
+    margin: 0 auto;
+    padding-bottom: 1.875rem;
+    /* 30px */
+    border-bottom: 1px solid var(--color-gray02);
+}
+
+#login div.login_snsIco img {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#login div.login_snsIco button:last-child img {
+    border: 1px solid #cdcdcd;
+}
+
+
+#login div.login_signUp {
+    padding-top: 1.875rem;
+    /* 30px */
+    display: flex;
+    justify-content: space-between;
+}
+
+#login div.login_signUp>p.subText:last-of-type {
+    font-size: 0.875rem;
+    /* 14px */
+    color: var(--color-gray01);
+    border-bottom: 1px solid var(--color-gray01);
+}
+
+/* error-message */
+#error-message {
+    text-align: center;
+    color: red;
+    margin-bottom: 1.25rem;
+}

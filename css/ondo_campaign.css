@@ -1,0 +1,458 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+}
+
+/* 공통요소 */
+:root {
+    --color-black01: #111;
+    --color-black02: #000;
+    --color-gray00: #555;
+    --color-gray01: #767676;
+    --color-gray02: #e5e5e5;
+    --color-gray03: #f2f2f2;
+    --color-white: #fff;
+    --color-point01: #ff7029;
+    --color-point02: #035060;
+    --color-point03: #d1eeec;
+    --color-point04: #ffebd0;
+    --color-point05: #b9dd93;
+    --fontSize-title: 3.25rem;
+    --fontSize-h2: 1.25rem;
+    --fontSize-h3: 2rem;
+    --fontSize-p01: 1.5rem;
+    --fontSize-p02: 1.25rem;
+    --fontSize-button: 1rem;
+    --fontSize-a: 0.938rem;
+    --lineHeight-120: 1.2;
+    --lineHeight-140: 1.4;
+    --lineHeight-160: 1.6;
+    --border-radius: 1.25rem;
+    /* 20px */
+    --margin-bottom: 7.5rem;
+    /* 120px */
+}
+
+body {
+    color: var(--color-black01);
+    letter-spacing: -0.5px;
+}
+
+.inner {
+    max-width: 90rem;
+    /* 1440px */
+    margin: 0 auto;
+}
+
+p.mainTitle {
+    text-transform: uppercase;
+    font-family: 'SBAggroM';
+    font-size: var(--fontSize-title);
+    line-height: var(--lineHeight-120);
+}
+
+h2 {
+    font-size: var(--fontSize-h2);
+    font-weight: 600;
+    line-height: var(--lineHeight-140);
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: var(--fontSize-h3);
+    line-height: var(--lineHeight-140);
+}
+
+p.title {
+    font-size: var(--fontSize-p01);
+    line-height: var(--lineHeight-140);
+}
+
+p.text {
+    font-size: var(--fontSize-p02);
+    line-height: var(--lineHeight-160);
+}
+
+/* 기본 버튼 스타일 */
+button.btn_click {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    width: 7.188rem;
+    height: 2.813rem;
+    font-size: var(--fontSize-button);
+    line-height: var(--lineHeight-120);
+    letter-spacing: -0.5px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black01);
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+button.btn_click:hover {
+    border-color: var(--color-point01);
+    background-color: var(--color-point01);
+}
+
+span.tag {
+    font-size: var(--fontSize-a);
+    line-height: var(--lineHeight-120);
+}
+
+/* head_area */
+.head_area {
+    margin: 10rem 0 5rem;
+    text-align: center;
+}
+
+.head_area h3 {
+    margin-bottom: 3.25rem;
+}
+
+.campain_list {
+    display: flex;
+    justify-content: center;
+    gap: 3.35rem;
+}
+
+.campain_list li a {
+    display: block;
+    padding: 0.2rem 0.3rem;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+}
+
+.campain_list li a:hover,
+.campain_list li a.active {
+    color: var(--color-point01);
+    border-color: var(--color-point01);
+}
+
+/* main_img */
+.main_img {
+    width: 100%;
+    height: 21.875rem;
+    background: url(../img/campaign/main_banner.png) no-repeat;
+    margin-bottom: 7.5rem;
+}
+
+.main_img .inner {
+    padding: 8rem 0;
+}
+
+/* how */
+.how {
+    margin-bottom: 7.5rem;
+}
+
+.how .inner>h2 {
+    text-indent: 0.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.how .step {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.how .step>section {
+    width: 29.125rem;
+    height: 21.875rem;
+    padding: 1.875rem;
+    border-radius: var(--border-radius);
+    background: var(--color-gray02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.6s;
+}
+
+.how .step>section h2 {
+    margin-bottom: 0.625rem;
+}
+
+.how .step section div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how .step section div:last-child p.text {
+    transform: translateY(1rem);
+    width: 60%;
+    color: var(--color-gray01);
+}
+
+.how .step>section:hover {
+    background-color: var(--color-white);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.how .step section div:last-child img {
+    height: 150px;
+    transition: 0.6s;
+}
+
+.how .step section:hover div:last-child img {
+    transform: translateY(-10px);
+}
+
+/* participation */
+.participation {
+    margin-bottom: 7.5rem;
+}
+
+.participation h2 {
+    text-indent: 0.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.participation .textarea_wrapper {
+    position: relative;
+}
+
+.participation .campaign_memo {
+    height: 6.25rem;
+    width: 100%;
+    resize: none;
+    border-color: var(--color-gray01);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+    /* 글자수 표시 공간 확보 */
+    font-size: var(--fontSize-a);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.6;
+    overflow: hidden;
+    /* 스크롤바 숨김 */
+}
+
+.participation .char_count {
+    position: absolute;
+    bottom: 0.8rem;
+    right: 1rem;
+    font-size: 0.75rem;
+    color: var(--color-gray01);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.participation .campaign_memo:focus {
+    outline: 0;
+}
+
+.participation input[type=file] {
+    display: none;
+}
+
+.participation .button_area {
+    margin: 1.25rem 0 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.participation .button_area label,
+.participation .button_area .upload {
+    width: calc(100%/2);
+    height: 3.25rem;
+    border: 1px solid var(--color-black01);
+    border-radius: var(--border-radius);
+    text-align: center;
+    cursor: pointer;
+}
+
+.participation .button_area label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: dashed;
+}
+
+.participation .button_area label .btn_upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.participation .button_area .upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.participation .button_area .upload:hover {
+    border-color: var(--color-point02);
+    background-color: var(--color-point02);
+    color: var(--color-white);
+}
+
+.campaign_notice {
+    background-color: var(--color-gray02);
+    padding: 1.875rem 0;
+}
+
+.campaign_notice li {
+    color: var(--color-gray01);
+    line-height: 1.6;
+}
+
+.campaign_notice li.notice {
+    color: var(--color-black01);
+}
+
+/* user_list */
+.user_list {
+    margin-bottom: 12.5em;
+}
+
+.user_list h2 {
+    margin-bottom: 1.25rem;
+    text-indent: 0.625rem;
+}
+
+.campaign_activity_list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.campaign_activity_list .activity {
+    width: calc(100%/5);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid var(--color-gray02);
+    cursor: pointer;
+}
+
+.campaign_activity_list .activity figure {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.campaign_activity_list .activity figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.campaign_activity_list .activity .text_area {
+    padding: 1.25rem;
+}
+
+.campaign_activity_list .activity .text_area p {
+    margin-bottom: 1.25rem;
+    line-height: var(--lineHeight-140);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.campaign_activity_list .activity .text_area .user_info {
+    display: flex;
+    align-items: center;
+    color: var(--color-gray01);
+}
+
+.campaign_activity_list .activity .text_area .user_info .name {
+    font-size: var(--fontSize-button);
+    line-height: var(--lineHeight-120);
+}
+
+.campaign_activity_list .activity .text_area .user_info .name::after {
+    content: '';
+    display: inline-block;
+    background-color: var(--color-gray02);
+    width: 2px;
+    height: 10px;
+    margin: 0 0.5rem;
+}
+
+.campaign_activity_list .activity .text_area .user_info .date {
+    font-size: var(--fontSize-a);
+    line-height: var(--lineHeight-120);
+}
+
+/* campaign_activity_modal */
+.campaign_activity_modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10000;
+}
+
+.campaign_activity_modal .close_btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.campaign_activity_modal .campaign_activity_modal_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.campaign_activity_modal .campaign_activity_modal_content figure {
+    flex: 0 0 60%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+
+.campaign_activity_modal .campaign_activity_modal_content figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.campaign_activity_modal .campaign_activity_modal_content .text_area {
+    width: 40%;
+    height: 100%;
+    color: var(--color-white);
+    padding: 2.5rem;
+}
+
+.campaign_activity_modal .campaign_activity_modal_content .text_area p {
+    font-size: var(--fontSize-p02);
+    line-height: var(--lineHeight-160);
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+    word-break: keep-all;
+}
+
+.campaign_activity_modal .campaign_activity_modal_content .text_area .user_info {
+    opacity: 0.8;
+}
+
+.campaign_activity_modal .campaign_activity_modal_content .text_area .name::after {
+    content: '';
+    display: inline-block;
+    background-color: var(--color-white);
+    width: 1px;
+    height: 10px;
+    margin: 0 1rem;
+}
+
+button.btn_click {
+    display: block;
+    width: 15rem;
+    margin: 3.75rem auto 0;
+    font-size: var(--fontSize-button);
+    border-color: var(--color-gray01);
+}

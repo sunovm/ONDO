@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+}
+
+/* 공통요소 */
+:root {
+    --color-black01: #111;
+    --color-black02: #000;
+    --color-gray00: #555;
+    --color-gray01: #767676;
+    --color-gray02: #e5e5e5;
+    --color-gray03: #f2f2f2;
+    --color-white: #fff;
+    --color-point01: #ff7029;
+    --color-point02: #035060;
+    --color-point03: #d1eeec;
+    --color-point04: #ffebd0;
+    --color-point05: #b9dd93;
+    --fontSize-title: 3.25rem;
+    --fontSize-h2: 1.25rem;
+    --fontSize-h3: 2rem;
+    --fontSize-p01: 1.5rem;
+    --fontSize-p02: 1.25rem;
+    --fontSize-button: 1rem;
+    --fontSize-a: 0.938rem;
+    --lineHeight-120: 1.2;
+    --lineHeight-140: 1.4;
+    --lineHeight-160: 1.6;
+    --border-radius: 1.25rem;
+    /* 20px */
+    --margin-bottom: 7.5rem;
+    /* 120px */
+}
+
+body {
+    color: var(--color-black01);
+    letter-spacing: -0.5px;
+}
+
+.inner {
+    max-width: 90rem;
+    /* 1440px */
+    margin: 0 auto;
+}
+
+p.mainTitle {
+    font-family: 'SBAggroM';
+    font-size: var(--fontSize-title);
+    line-height: var(--lineHeight-120);
+}
+
+h2 {
+    font-size: var(--fontSize-h2);
+    font-weight: 600;
+    line-height: var(--lineHeight-140);
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: var(--fontSize-h3);
+    line-height: var(--lineHeight-140);
+}
+
+p.title {
+    font-size: var(--fontSize-p01);
+    line-height: var(--lineHeight-140);
+}
+
+p.text {
+    font-size: var(--fontSize-p02);
+    line-height: var(--lineHeight-160);
+}
+
+p.noteText {
+    font-size: var(--fontSize-button);
+    line-height: var(--lineHeight-120);
+}
+
+p.subText {
+    font-size: var(--fontSize-a);
+    line-height: var(--lineHeight-120);
+}
+
+/* 기본 버튼 스타일 */
+button.btn_click {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    width: 7.188rem;
+    height: 2.813rem;
+    font-size: var(--fontSize-button);
+    line-height: var(--lineHeight-120);
+    letter-spacing: -0.5px;
+    background-color: transparent;
+    border: 1px solid var(--color-black01);
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+button.btn_click:hover {
+    background-color: var(--color-point01);
+}
+
+span.tag {
+    font-size: var(--fontSize-a);
+    line-height: var(--lineHeight-120);
+}
+
+/* 아래부터 작업해주세요 */
+/* ------------ 분리배출 팁페이지 ------------ */
+
+/* tip_main */
+#tip_main {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+#tip_main video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* 950px */
+    object-fit: cover;
+}
+
+#tip_main div.tip_mainText {
+    position: absolute;
+    bottom: 11.25rem;
+    color: var(--color-white);
+}
+
+#tip_main div.tip_mainText p.mainTitle {
+    margin-bottom: 0.625rem;
+    /* 10px */
+}
+
+#tip_main div.tip_mainText>h3 {
+    font-weight: 300;
+}
+
+/* tip_content */
+#tip_content {
+    padding-top: var(--margin-bottom);
+    /* 120px */
+    padding-bottom: 150px;
+    box-sizing: border-box;
+}
+
+#tip_content div.tip_introText {
+    margin-bottom: 3.75rem;
+    /* 100px */
+}
+
+#tip_content div.tip_introText p.title {
+    margin-bottom: 1.25rem;
+    /* 20px */
+}
+
+#tip_content div.tip_introText p.text {
+    color: var(--color-gray01);
+}
+
+#tip_content div.tip_linkCard {
+    display: flex;
+    gap: var(--border-radius);
+    /* 20px */
+}
+
+#tip_content div.tip_linkCard div.tipCard {
+    width: 44.375rem;
+    /* 710px */
+    height: 25rem;
+    /* 400rem */
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+#tip_content div.tip_linkCard div.tipCard:hover {
+    box-shadow: 0 2px 10px rgba(17, 17, 17, 0.2);
+}
+
+#tip_content div.tip_linkCard div.tipCard figure {
+    border-radius: var(--border-radius);
+    position: relative;
+    overflow: hidden;
+}
+
+#tip_content div.tip_linkCard div.tipCard figure img {
+    transition: 0.7s;
+}
+
+#tip_content div.tip_linkCard div.tipCard:hover figure img {
+    scale: 1.06;
+}
+
+#tip_content div.tip_linkCard div.tipCard>div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#tip_content div.tip_linkCard div.tipCard.others {
+    background-color: var(--color-gray03);
+}
+
+#tip_content div.tip_linkCard div.tipCard p.title {
+    margin-bottom: 0.625rem;
+    /* 10px */
+}
+
+#tip_content div.tip_linkCard div.tipCard p.text {
+    margin-bottom: 2.5rem;
+    /* 80px */
+    color: var(--color-gray00);
+}
+
+#tip_content div.tip_linkCard div.tipCard a.tipBtn {
+  position: relative;
+  display: block;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  width: 7.188rem;
+  height: 2.813rem;
+  font-size: var(--fontSize-button);
+  line-height: 2.813rem;
+  text-align: center;
+  letter-spacing: -0.5px;
+  border: 1px solid var(--color-black01);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  z-index: 0;
+}
+
+#tip_content div.tip_linkCard div.tipCard a.tipBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  background-color: var(--color-point02);
+  z-index: -1;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+#tip_content div.tip_linkCard div.tipCard a.tipBtn:hover::before {
+  transform: scaleX(1);
+}
+
+#tip_content div.tip_linkCard div.tipCard a.tipBtn:hover {
+  background-color: transparent;
+  color: var(--color-white);
+}

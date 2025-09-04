@@ -1,0 +1,223 @@
+{
+  "bath": [
+    {
+      "brand": "에코브릭",
+      "name": "약산성 클렌징 바",
+      "img": "img/best1.png",
+      "hoverImg": "img/best1_hover.png",
+      "price": 1780
+    },
+    {
+      "brand": "러버터",
+      "name": "친환경 삼베 페이스타올",
+      "img": "img/best2.png",
+      "hoverImg": "img/best2_hover.png",
+      "price": 790
+    },
+    {
+      "brand": "자연상점",
+      "name": "업사이클링 고래 비누받침",
+      "img": "img/best3.png",
+      "hoverImg": "img/best3_hover.jpg",
+      "price": 1100
+    },
+    {
+      "brand": "지구샵",
+      "name": "노플라스틱선데이 칫솔꽂이",
+      "img": "img/best4.png",
+      "hoverImg": "img/best4_hover.jpg",
+      "price": 1780
+    },
+    {
+      "brand": "오아시스",
+      "name": "대나무 컬러 칫솔",
+      "img": "img/best5.png",
+      "hoverImg": "img/best5_hover.png",
+      "price": 1780
+    }
+  ],
+  "kitchen": [
+    {
+      "brand": "지구샵",
+      "name": "나무 조리도구 세트",
+      "img": "img/best1_k.jpg",
+      "hoverImg": "img/best1_k_hover.jpg",
+      "price": 1390
+    },
+    {
+      "brand": "싱글룸",
+      "name": "크림 스트로우 텀블러",
+      "img": "img/best2_k.png",
+      "hoverImg": "img/best2_k_hover.png",
+      "price": 1260
+    },
+    {
+      "brand": "이크",
+      "name": "실리콘 빨대 3종 (220ml)",
+      "img": "img/best3_k.png",
+      "hoverImg": "img/best3_k_hover.png",
+      "price": 440
+    },
+    {
+      "brand": "싱글룸",
+      "name": "뱀부얀 패턴 핸드타월",
+      "img": "img/best4_k.png",
+      "hoverImg": "img/best4_k_hover.png",
+      "price": 440
+    },
+    {
+      "brand": "자연상점",
+      "name": "자상한 농부 설거지비누(단품)",
+      "img": "img/best5_k.jpg",
+      "hoverImg": "img/best5_k_hover.png",
+      "price": 490
+    }
+  ],
+  "stationery": [
+    {
+      "brand": "스테이그린",
+      "name": "사탕수수 메모지",
+      "img": "img/best1_s.png",
+      "hoverImg": "img/best1_s_hover.png",
+      "price": 1390
+    },
+    {
+      "brand": "언롤서피스",
+      "name": "재생펠트 펜트레이",
+      "img": "img/best2_s.png",
+      "hoverImg": "img/best2_s_hover.png",
+      "price": 1700
+    },
+    {
+      "brand": "그레이프랩",
+      "name": "G.note coffee&sugar 친환경노트",
+      "img": "img/best3_s.png",
+      "hoverImg": "img/best3_s_hover.png",
+      "price": 880
+    },
+    {
+      "brand": "싱글룸",
+      "name": "친환경 밀짚 코르크 볼펜 5종",
+      "img": "img/best4_s.png",
+      "hoverImg": "img/best4_s_hover.png",
+      "price": 100
+    },
+    {
+      "brand": "꼬말핫",
+      "name": "펠트 펜홀더",
+      "img": "img/best5_s.png",
+      "hoverImg": "img/best5_s_hover.png",
+      "price": 890
+    }],
+  "daily": [
+    {
+      "brand": "노플라스틱선데이",
+      "name": "바다키링 (랜덤박스)",
+      "img": "img/best1_d.png",
+      "hoverImg": "img/best1_d_hover.png",
+      "price": 720
+    },
+    {
+      "brand": "노플라스틱선데이",
+      "name": "럭키 키링",
+      "img": "img/best2_d.png",
+      "hoverImg": "img/best2_d_hover.png",
+      "price": 700
+    },
+    {
+      "brand": "지구샵",
+      "name": "업사이클 테니스 키링",
+      "img": "img/best3_d.jpg",
+      "hoverImg": "img/best3_d_hover.jpg",
+      "price": 1890
+    },
+    {
+      "brand": "project1907",
+      "name": "충전기 스트랩",
+      "img": "img/best4_d.png",
+      "hoverImg": "img/best4_d_hover.png",
+      "price": 850
+    },
+    {
+      "brand": "project1907",
+      "name": "돗자리 1-2인용",
+      "img": "img/best5_d.png",
+      "hoverImg": "img/best5_d_hover.png",
+      "price": 4500
+    }
+  ],
+  "makeup": [
+    {
+      "brand": "소락",
+      "name": "오가닉 메이크업와입스",
+      "img": "img/best1_m.png",
+      "hoverImg": "img/best1_m_hover.jpg",
+      "price": 300
+    },
+    {
+      "brand": "동구밭",
+      "name": "올바른 핸드크림 시어버터",
+      "img": "img/best2_m.png",
+      "hoverImg": "img/best2_m_hover.png",
+      "price": 700
+    },
+    {
+      "brand": "어반에코",
+      "name": "뷰티 제로웨이스트 키트",
+      "img": "img/best3_m.png",
+      "hoverImg": "img/best3_m_hover.png",
+      "price": 1600
+    },
+    {
+      "brand": "아로마티카",
+      "name": "티트리 포어 퓨리파잉 세럼 30ml",
+      "img": "img/best4_m.png",
+      "hoverImg": "img/best4_m_hover.jpg",
+      "price": 1120
+    },
+    {
+      "brand": "샘크래프트",
+      "name": "컬러립밤",
+      "img": "img/best5_m.jpg",
+      "hoverImg": "img/best5_m_hover.jpg",
+      "price": 1400
+    }
+  ],
+  "fashion": [
+    {
+      "brand": "꼬말핫",
+      "name": "컬러블록 이지백",
+      "img": "img/best1_f.jpg",
+      "hoverImg": "img/best1_f_hover.jpg",
+      "price": 2800
+    },
+    {
+      "brand": "리에코서울",
+      "name": "스콘 랩탑 파우치",
+      "img": "img/best2_f.png",
+      "hoverImg": "img/best2_f_hover.png",
+      "price": 4500
+    },
+    {
+      "brand": "project1907",
+      "name": "미니 파우치",
+      "img": "img/best3_f.png",
+      "hoverImg": "img/best3_f_hover.png",
+      "price": 1500
+    },
+    {
+      "brand": "project1907",
+      "name": "후드티",
+      "img": "img/best4_f.png",
+      "hoverImg": "img/best4_f_hover.png",
+      "price": 5900
+    },
+    {
+      "brand": "119레오",
+      "name": "방화복 명함지갑",
+      "img": "img/best5_f.png",
+      "hoverImg": "img/best5_f_hover.png",
+      "price": 5800
+    }
+  ]
+}

@@ -1,0 +1,707 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SBAggroM';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+}
+
+/* 공통요소 */
+:root {
+    --color-black01: #111;
+    --color-black02: #000;
+    --color-gray00: #555;
+    --color-gray01: #767676;
+    --color-gray02: #e5e5e5;
+    --color-gray03: #f2f2f2;
+    --color-white: #fff;
+    --color-point01: #ff7029;
+    --color-point02: #035060;
+    --color-point03: #d1eeec;
+    --color-point04: #ffebd0;
+    --color-point05: #b9dd93;
+    --fontSize-title: 3.25rem;
+    --fontSize-h2: 1.25rem;
+    --fontSize-h3: 2rem;
+    --fontSize-p01: 1.5rem;
+    --fontSize-p02: 1.25rem;
+    --fontSize-button: 1rem;
+    --fontSize-a: 0.938rem;
+    --lineHeight-120: 1.2;
+    --lineHeight-140: 1.4;
+    --lineHeight-160: 1.6;
+    --border-radius: 1.25rem;
+    /* 20px */
+    --margin-bottom: 7.5rem;
+    /* 120px */
+}
+
+body {
+    color: var(--color-black01);
+    background: var(--color-black02);
+    letter-spacing: -0.5px;
+}
+
+.inner {
+    max-width: 90rem;
+    /* 1440px */
+    margin: 0 auto;
+}
+
+p.mainTitle {
+    font-family: 'SBAggroM';
+    font-size: var(--fontSize-title);
+    line-height: var(--lineHeight-120);
+}
+
+h2 {
+    font-size: var(--fontSize-h2);
+    font-weight: 600;
+    line-height: var(--lineHeight-140);
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: var(--fontSize-h3);
+    line-height: var(--lineHeight-140);
+}
+
+p.title {
+    font-size: var(--fontSize-p01);
+    line-height: var(--lineHeight-140);
+}
+
+p.text {
+    font-size: var(--fontSize-p02);
+    line-height: var(--lineHeight-160);
+}
+
+/* main 요소에 header 높이만큼 여백 추가 */
+main {
+    margin-top: 5rem;
+    /* header 높이만큼 상단 여백 : header와 이미지가 겹치지 않기 위함*/
+}
+
+/* btn_area 버튼 공통 */
+.btn_area {
+    display: inline-block;
+    border: 1px solid var(--color-white);
+    border-radius: 3.125rem;
+    /* 50px; */
+    transition: all 0.3s;
+}
+
+.btn_area a {
+    display: inline-block;
+    padding: 0.875rem 1.875rem;
+    color: var(--color-white);
+    font-size: var(--fontSize-button);
+    transition: all 0.3s;
+}
+
+.btn_area img {
+    margin-left: 12px;
+    vertical-align: middle;
+    filter: invert(0);
+}
+
+.btn_area:hover {
+    background: var(--color-white);
+}
+
+.btn_area:hover a {
+    color: var(--color-black02);
+}
+
+.btn_area:hover img {
+    filter: invert(1);
+}
+
+span.tag {
+    font-size: var(--fontSize-a);
+    line-height: var(--lineHeight-120);
+}
+
+/* 아래부터 작업해주세요 */
+#dacuMain {
+    height: calc(100vh - 5rem);
+    background: url(../img/light_bg.png) no-repeat center/cover;
+}
+
+#dacuMainVisual {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#dacuMainVisual figure {
+    position: absolute;
+    top: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/light_bg.png) no-repeat center/cover;
+}
+
+#dacuMainVisual .dacuMain_title {
+    position: absolute;
+    bottom: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#dacuMainVisual .dacuMain_title p {
+    display: inline-block;
+    font-size: 5rem;
+    font-family: 'SBAggroM';
+    color: var(--color-white);
+}
+
+.dacuMain_text {
+    position: absolute;
+    bottom: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: var(--color-white);
+    font-size: var(--fontSize-p01);
+    font-weight: 300;
+    line-height: var(--lineHeight-140);
+}
+
+/* 네온효과 */
+#dacuMainVisual .dacuMain_title .on {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+
+    text-shadow:
+        0 0 5px #ff5f10,
+        0 0 10px #ff7b29,
+        0 0 20px #ff7b29,
+        0 0 40px #ff5f10,
+        0 0 80px #ff5f10;
+
+    animation: neonSoftFlicker 3s infinite alternate;
+}
+
+/* 네온사인 깜빡임 효과 */
+@keyframes neonSoftFlicker {
+
+    0%,
+    25%,
+    100% {
+        text-shadow:
+            0 0 2px #ff5f10,
+            0 0 4px #ff7b29,
+            0 0 8px #ff7b29,
+            0 0 15px #ff5f10,
+            0 0 30px #ff5f10;
+        opacity: 0.5;
+        /* 완전히 꺼지지 않고 흐릿한 느낌 */
+    }
+
+    50% {
+        text-shadow:
+            0 0 5px #ff5f10,
+            0 0 10px #ff7b29,
+            0 0 20px #ff7b29,
+            0 0 40px #ff5f10,
+            0 0 80px #ff5f10;
+        opacity: 1;
+    }
+}
+
+#dacuMainVisual .mouse img {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.5rem;
+    /* 40px; */
+}
+
+/* dacuTopic */
+#dacuTopic .topic_area {
+    max-width: 100%;
+    height: 40.625rem;
+    /* 650px */
+    background: url(../img/Main\ Issue\ Banner_bg.png) no-repeat center/cover;
+}
+
+#dacuTopic .clothes {
+    background: url(../img/Sub\ Issue\ Banner_bg.png);
+}
+
+.topic_area .inner {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.topic_area .inner .text_area {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-white);
+}
+
+.text_area .mainTitle {
+    margin-bottom: 1.25rem;
+    /* 20px */
+}
+
+.text_area .title {
+    font-weight: 300;
+}
+
+.topic_message {
+    background: rgba(85, 85, 85, 0.20);
+    max-width: 100%;
+    height: 18.75rem;
+    /* 300px */
+    position: relative;
+}
+
+.topic_message .inner {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic_message .inner .title {
+    color: var(--color-white);
+    font-weight: 300;
+}
+
+.topic_message .inner .quote_left {
+    position: absolute;
+    left: 38%;
+    bottom: 50%;
+}
+
+.topic_message .inner .quote_right {
+    position: absolute;
+    right: 38%;
+    bottom: 50%;
+}
+
+.topic_message .inner .cloth01 {
+    left: 37%;
+}
+
+.topic_message .inner .cloth02 {
+    right: 37%;
+}
+
+/* plasticArea */
+#plasticArea {
+    height: 100vh;
+    position: relative;
+}
+
+#plasticArea .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pla_left {
+    flex: 1;
+    position: relative;
+}
+
+.pla_left .inner {
+    position: absolute;
+    top: 50%;
+    left: 15rem;
+    transform: translateY(-50%);
+}
+
+.pla_left .text_area .title {
+    font-size: var(--fontSize-p01);
+    color: var(--color-white);
+    margin-bottom: 1.25rem;
+}
+
+.pla_left .text_area>p {
+    color: rgba(204, 204, 204, 0.8);
+    font-size: var(--fontSize-p02);
+    font-weight: 300;
+    line-height: var(--lineHeight-140);
+}
+
+.pla_left .text_area>p:last-child {
+    margin-bottom: 3.75rem;
+}
+
+.pla_right {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.pla_right video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* plasticArea02 */
+#plasticArea02 {
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pla_left {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.pla_left video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pla_right {
+    flex: 1;
+    position: relative;
+}
+
+.pla_right .inner {
+    position: absolute;
+    top: 50%;
+    left: 15rem;
+    transform: translateY(-50%);
+}
+
+.pla_right .text_area .title {
+    font-size: var(--fontSize-p01);
+    color: var(--color-white);
+    margin-bottom: 1.25rem;
+}
+
+.pla_right .text_area>p {
+    color: rgba(204, 204, 204, 0.8);
+    font-size: var(--fontSize-p02);
+    font-weight: 300;
+    line-height: var(--lineHeight-140);
+}
+
+.pla_right .text_area>p:last-child {
+    margin-bottom: 3.75rem;
+}
+
+/* dacuClothes */
+#dacuClothes {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dacuClothes>h2 {
+    position: absolute;
+    top: 20%;
+    left: 12.5%;
+    color: var(--color-white);
+    font-size: var(--fontSize-h2);
+}
+
+#dacuClothes .slide-content {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+#dacuClothes .desc_area .text-item {
+    position: absolute;
+    top: -50%; 
+    transform: translateY(50%);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+    transition: opacity 0.5s ease;
+}
+#dacuClothes .desc_area .text-item.active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+.desc_area {
+    width: 50%;
+    padding-left: calc((100vw - 1440px) / 2);
+    position: relative;
+}
+
+.text_area .title {
+    font-size: var(--fontSize-p01);
+    font-weight: 300;
+    color: var(--color-white);
+    margin-bottom: 1.25rem; /* 20px; */
+}
+
+/* button */
+#dacuClothes .desc_area .text {
+    color: rgba(204, 204, 204, 0.8);
+    font-size: var(--fontSize-p02);
+    font-weight: 300;
+    line-height: var(--lineHeight-160);
+}
+
+#dacuClothes .btn_area {
+    margin-top: 3.75rem; /* 60px; */
+} 
+
+/* video */
+#dacuClothes .image-swiper {position: relative; z-index: 1;}
+#dacuClothes .desc_area {position: relative; z-index: 2;}
+#dacuClothes .btn_area {position: relative; z-index: 3;}
+
+.image-swiper {
+    flex: 1;
+}
+
+.swiper-wrapper {
+    width: 56.25rem; /* 900px */
+    margin: 0 auto;
+}
+
+.swiper-slide video {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    display: block;
+}
+
+.swiper-slide:last-child {margin-right: 0 !important;}
+
+/* navigation button */
+.custom-navigation {
+    position: absolute;
+    bottom: -30%; right: 8.125rem; /* 130px; */
+    display: flex;
+    gap: 15px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    all: unset;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 18px 25px;
+    cursor: pointer;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none !important;
+}
+
+/* dacuNews */
+#dacuNews {
+    display: flex;
+    align-items: center;
+}
+
+#dacuNews h3 {
+    text-indent: 0.625rem;
+    color: var(--color-white);
+    font-size: var(--fontSize-h3);
+    font-weight: 300;
+    line-height: var(--lineHeight-140);
+    margin-bottom: 1.875rem;
+}
+
+#dacuNews .news_area {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.875rem;
+}
+
+#dacuNews .news_box {
+    width: 28.75rem;
+    height: 28.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+#dacuNews .news_box a {
+    display: block;
+    height: 100%;
+    color: inherit;
+}
+
+/* 뉴스 이미지 */
+#dacuNews .news_thumb {
+    width: 100%;
+    height: 21.5625rem;
+    /* 345px */
+    overflow: hidden;
+}
+
+#dacuNews .news_thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.news_box:hover .news_thumb img {
+    transform: scale(1.03);
+}
+
+/* 텍스트 영역 */
+#dacuNews .news_txt {
+    height: 7.1875rem;
+    padding: 1.5625rem 1.875rem;
+    /* 25px 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    /* 12px */
+    background: var(--color-white);
+}
+
+/* 뉴스 제목 */
+#dacuNews .news_txt .text {
+    color: var(--color-black02);
+    font-size: var(--fontSize-p02);
+    font-weight: 300;
+}
+
+.news_box:last-child .text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 뉴스 정보 (출처/날짜) */
+#dacuNews .news_info {
+    font-size: var(--fontSize-a);
+    color: var(--color-gray01);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#dacuNews .news_info span {
+    display: block;
+    font-weight: 300;
+}
+
+#dacuNews .news_info img {
+    object-fit: contain;
+    color: var(--color-gray02);
+    font-weight: 100;
+}
+
+/* dacuLight */
+.gradient_wrap {
+    position: relative;
+}
+
+.gradient_wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    background: linear-gradient(to bottom, #000 0%, #fbf7d3 100%);
+    z-index: -1;
+}
+
+#dacuNews,
+#dacuLight {
+    height: 100vh;
+    position: relative;
+}
+
+#dacuLight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/light_shape.png) no-repeat center bottom;
+    background-size: auto, cover;
+}
+
+#dacuLight .inner {
+    width: 100%;
+    text-align: center;
+}
+
+#dacuLight .save {
+    text-align: center;
+}
+
+#dacuLight .save .text {
+    font-family: 'SBAggroM';
+    font-size: 2.8rem;
+    /* 45px */
+    color: var(--color-white);
+}
+
+/* 전구 내부 텍스트 */
+#dacuLight .light_message {
+    text-align: center;
+    padding: 2.5rem;
+    margin-top: 12.5rem;
+    /* 200px; */
+}
+
+#dacuLight .light_message h1 {
+    font-family: 'SBAggroM';
+    font-size: 3.25rem;
+    /* 52px */
+    color: var(--color-point01);
+    margin: 1.875rem 0;
+    /* 30px 0 */
+}
+
+/* 캠페인 참여 버튼 */
+#dacuLight .btn_light {
+    margin-top: 5rem;
+    /* 80px; */
+    border: 1px solid var(--color-black02);
+}
+
+#dacuLight .btn_light a {
+    color: var(--color-black02);
+}
+
+#dacuLight .btn_light img {
+    filter: invert(1);
+    color: var(--color-black02);
+}
+
+#dacuLight .btn_light:hover {
+    background-color: var(--color-black02);
+}
+
+#dacuLight .btn_light:hover a {
+    color: var(--color-white);
+}
+
+#dacuLight .btn_light:hover img {
+    filter: invert(0);
+}

@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+/* pointshop */
+.pointshop {
+    position: relative;
+    width: 100%;
+    height: 21.875rem;
+    margin-bottom: var(--margin-bottom);
+}
+
+.pointshop .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-prev {
+   padding-left:3.125rem;
+}
+
+.swiper-button-next {
+  padding-right: 3.125rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color:var(--color-white);
+    transition: color 0.3s ease;
+}
+
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 1;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: var(--color-black01);
+}
+
+:root {
+    --swiper-pagination-color: var(--color-black01);
+}
+
+.pointshop .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    max-width: 90rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.pointshop .inner .title {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.pointshop .inner img {
+    height: 3.438rem;
+    padding-bottom: 0.625rem;
+}
+
+.pointshop .inner .subtitle {
+    color: var(--color-black01);
+    font-size: var(--fontSize-p01);
+}
+
+/* best */
+.inner h2 {
+    margin-bottom: 1.25rem;
+}
+
+.best {
+    display: flex;
+    gap: 1.875rem;
+    margin-bottom: var(--margin-bottom);
+}
+
+.best .menu {
+    width: 10.188rem;
+    height: 18.375rem;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+}
+
+.best .menu li {
+    padding: 0.938rem 0.625rem;
+    background: var(--color-white);
+    color: var(--color-gray01);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: var(--fontSize-button);
+}
+
+.best .menu li.active {
+    background: var(--color-point01);
+    color: var(--color-white);
+}
+
+/* hover 상태 */
+.best .menu li:hover {
+    background: rgb(255, 112, 41, 0.2);
+    color: var(--color-point01);
+    font-weight: 600;
+}
+
+.best .menu li a {
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.product {
+    display: flex;
+    gap: 1.875rem;
+}
+
+.product .pro-info .co-name {
+    font-size: var(--fontSize-a);
+    color: var(--color-gray01);
+    margin-bottom: 0.313rem;
+}
+
+.product .pro-info .pro-name {
+    font-size: var(--fontSize-button);
+    color: var(--color-black01);
+    margin-bottom: 0.625rem;
+}
+
+.product .pro-info .price-area {
+    display: flex;
+}
+
+.product .pro-info .price-area .price {
+    font-size: var(--fontSize-button);
+    color: var(--color-black01);
+    margin-left: 0.313rem;
+}
+
+.best .product .pro-info .info .img-wrap {
+    position: relative;
+    width: 14.063rem;
+    height: 18.75rem;
+    margin-bottom: 0.625rem;
+}
+
+.best .product .pro-info .info .img-wrap img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+.best .product .pro-info .info .img-wrap .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.best .product .pro-info .info .img-wrap:hover .hover-img {
+    opacity: 1;
+}
+
+.best .product .pro-info .info .img-wrap:hover .main-img {
+    opacity: 0;
+}
+
+
+/* refill */
+
+.refill {
+    position: relative;
+    overflow: hidden;
+}
+
+.refill .product {
+    gap: 1.875rem;
+    user-select: none;
+    cursor: grab;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.refill .product:active {
+    cursor: grabbing;
+}
+
+.refill .pro-info {
+    flex: 0 0 calc(25% - 0.938rem);
+    overflow: hidden;
+    width: 21.063rem;
+    height: 33.063rem;
+}
+
+.refill .img-wrap {
+    width: 100%;
+    height: 27.813rem;
+    overflow: hidden;
+    margin-bottom: 0.625rem;
+}
+
+.refill .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* 슬라이드 컨트롤 */
+.slide-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.875rem;
+}
+
+/* 프로그레스 바 */
+.progress-bar {
+    width: 100%;
+    height: 0.25rem;
+    background: var(--color-gray02);
+    border-radius: 0.188rem;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: var(--margin-bottom);
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--color-black01);
+    border-radius: 0.188rem;
+    transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* item */
+
+.item {
+    margin-bottom: var(--margin-bottom);
+}
+
+.item-area {
+    display: flex;
+    gap: 1.875rem;
+}
+
+.item-area li {
+    position: relative;
+    width: 28.75rem;
+    height: 38.375rem;
+    cursor: pointer;
+}
+
+.item-area li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.item-area li:hover::after {
+    opacity: 1;
+}
+
+.item-area li .text-area {
+    position: absolute;
+    top: 30.938rem;
+    left: 1.25rem;
+    z-index: 1;
+}
+
+.item-area li .text-area .title,
+.item-area li .text-area .text {
+    color: var(--color-black01);
+    transition: color 0.4s ease;
+}
+
+.item-area li:hover .text-area .title,
+.item-area li:hover .text-area .text {
+    color: var(--color-white);
+}
+
+/* banner */
+
+.banner {
+    background: url(../img/샵배너.png);
+    width: 100%;
+    height: 18.75rem;
+
+}
+
+.banner .inner h3 {
+    color: var(--color-white);
+    margin-bottom: 0.625rem;
+    padding-top: 5.375rem;
+}
+
+.banner .inner .text {
+    color: var(--color-white);
+    margin-bottom: 1.25rem;
+}
+
+button.btn_click {
+    border: none;
+}

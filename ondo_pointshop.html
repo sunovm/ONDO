@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온도 | 포인트샵</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/ondo_category.css">
+    <link rel="stylesheet" href="css/ondo_common_white.css">
+    <link rel="stylesheet" href="css/pointshop.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="js/ondo_common_white.js" defer></script>
+    <script src="js/pointshop.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <a href="index.html" class="logo"><img src="img/main_logo_c.png" alt=""></a>
+            <nav>
+                <ul class="gnb main">
+                    <li><a href="ondo_dacu.html">온도뉴스</a></li>
+                    <li><a href="ondo_tip.html">분리배출</a></li>
+                    <li><a href="ondo_zerowaste.html">제로웨이스트</a></li>
+                    <li><a href="ondo_campaign.html">캠페인</a></li>
+                    <li><a href="ondo_pointshop.html">포인트샵</a></li>
+                </ul>
+            </nav>
+            <div class="util">
+                <div class="point">
+                    <img src="img/light bulb.png" alt="">
+                    <span>1,200p</span>
+                </div>
+                <div class="profile">
+                    <a href="mypage.html">
+                        <img src="img/ico_profile_b.png" alt="내 프로필">
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="ondo_login.html">
+                        <img src="img/ico_cart_b.png" alt="장바구니">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="main-banner">
+            <div class="swiper pointshop">
+                <div class="swiper-wrapper">
+                    <!-- slide 1 -->
+                    <div class="swiper-slide" style="background-image:url('img/shop-banner-1.png')">
+                        <div class="inner">
+                            <div class="title">
+                                <img src="img/main_logo_b.png" alt="">
+                                <p class="mainTitle">포인트샵</p>
+                            </div>
+                            <p class="subtitle">포인트를 모아 친환경 제품으로 교환해보세요.</p>
+                        </div>
+                    </div>
+
+                    <!-- slide 2 -->
+                    <div class="swiper-slide" style="background-image:url('img/shop-banner-2.png')">
+                        <div class="inner">
+                            <div class="title">
+                                <img src="img/main_logo_b.png" alt="">
+                                <p class="mainTitle">에코 제품</p>
+                            </div>
+                            <p class="subtitle">환경을 지키는 또 다른 방법!</p>
+                        </div>
+                    </div>
+
+                    <!-- slide 3 -->
+                    <div class="swiper-slide" style="background-image:url('img/shop-banner-3.png')">
+                        <div class="inner">
+                            <div class="title">
+                                <img src="img/main_logo_b.png" alt="">
+                                <p class="mainTitle">포인트샵</p>
+                            </div>
+                            <p class="subtitle">친환경이 특별한 일이 아닌 일상이 되도록.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+        <section id="best-item">
+            <div class="inner">
+                <h2>카테고리별 베스트 상품</h2>
+                <div class="best">
+                    <ul class="menu">
+                        <li class="active" data-category="bath"><a href="#">욕실용품</a></li>
+                        <li data-category="kitchen"><a href="#">주방용품</a></li>
+                        <li data-category="stationery"><a href="#">문구용품</a></li>
+                        <li data-category="daily"><a href="#">일상소품</a></li>
+                        <li data-category="makeup"><a href="#">메이크업</a></li>
+                        <li data-category="fashion"><a href="#">패션잡화</a></li>
+                    </ul>
+                    <!-- 상품영역 -->
+                    <ul class="product"></ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="refill-item">
+            <div class="inner">
+                <h2>리필로 채우는 제로웨이스트</h2>
+                <div class="refill">
+                    <ul class="product" id="productSlider">
+                        <li class="pro-info">
+                            <a href="#">
+                                <div class="info">
+                                    <div class="img-wrap">
+                                        <img src="img/refill1.png" alt="">
+                                    </div>
+                                    <p class="co-name">아로마티카</p>
+                                    <p class="pro-name">모근영양 헤어토닉</p>
+                                </div>
+                                <div class="price-area">
+                                    <img src="img/Light Bulb.png" alt="">
+                                    <p class="price">1780p</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pro-info">
+                            <a href="#">
+                                <div class="info">
+                                    <div class="img-wrap">
+                                        <img src="img/refill2.jpg" alt="">
+                                    </div>
+                                    <p class="co-name">지구샵</p>
+                                    <p class="pro-name">고체치약 10정입</p>
+                                </div>
+                                <div class="price-area">
+                                    <img src="img/Light Bulb.png" alt="">
+                                    <p class="price">300p</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pro-info">
+                            <a href="#">
+                                <div class="info">
+                                    <div class="img-wrap">
+                                        <img src="img/refill3.jpg" alt="">
+                                    </div>
+                                    <p class="co-name">비욘드</p>
+                                    <p class="pro-name">프로페셔널 디펜스 샴푸 리필</p>
+                                </div>
+                                <div class="price-area">
+                                    <img src="img/Light Bulb.png" alt="">
+                                    <p class="price">1420p</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pro-info">
+                            <a href="#">
+                                <div class="info">
+                                    <div class="img-wrap">
+                                        <img src="img/refill4.png" alt="">
+                                    </div>
+                                    <p class="co-name">헤이밀리</p>
+                                    <p class="pro-name">주방세제 3종 set</p>
+                                </div>
+                                <div class="price-area">
+                                    <img src="img/Light Bulb.png" alt="">
+                                    <p class="price">1780p</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pro-info">
+                            <a href="#">
+                                <div class="info">
+                                    <div class="img-wrap">
+                                        <img src="img/refill5.jpg" alt="">
+                                    </div>
+                                    <p class="co-name">이니스프리</p>
+                                    <p class="pro-name">그린티 히알루론산 수분 세럼 리필</p>
+                                </div>
+                                <div class="price-area">
+                                    <img src="img/Light Bulb.png" alt="">
+                                    <p class="price">1700p</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pro-info"> <a href="#">
+                                <div class="info">
+                                    <div class="img-wrap">
+                                        <img src="img/refill6.png" alt="">
+                                    </div>
+                                    <p class="co-name">심플리오</p>
+                                    <p class="pro-name">어니스트 주방세제</p>
+                                </div>
+                                <div class="price-area">
+                                    <img src="img/Light Bulb.png" alt="">
+                                    <p class="price">1290p</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pro-info">
+                            <a href="#">
+                                <div class="info">
+                                    <div class="img-wrap">
+                                        <img src="img/refill7.png" alt="">
+                                    </div>
+                                    <p class="co-name">투리빙</p>
+                                    <p class="pro-name">식물성 비건 치실</p>
+                                </div>
+                                <div class="price-area">
+                                    <img src="img/Light Bulb.png" alt="">
+                                    <p class="price">220p</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pro-info">
+                            <a href="#">
+                                <div class="info">
+                                    <div class="img-wrap">
+                                        <img src="img/refill8.png" alt="">
+                                    </div>
+                                    <p class="co-name">리필리</p>
+                                    <p class="pro-name">로컬스톡 신선백미+안심현미 세트</p>
+                                </div>
+                                <div class="price-area">
+                                    <img src="img/Light Bulb.png" alt="">
+                                    <p class="price">990p</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="slide-controls">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="card-item">
+            <div class="item">
+                <div class="inner">
+                    <h2>나의 온도에 맞춰 고르는 친환경 아이템</h2>
+                    <div>
+                        <ul class="item-area">
+                            <li>
+                                <img src="img/item1.png" alt="">
+                                <div class="text-area">
+                                    <p class="title">입문자를 위한 제로웨이스트</p>
+                                    <p class="text">오늘부터 바로 시작 가능!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/item2.png" alt="">
+                                <div class="text-area">
+                                    <p class="title">제로웨이스트 문구점</p>
+                                    <p class="text">아이와 함께 제로웨이스트를 실천해보세요</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/item3.png" alt="">
+                                <div class="text-area">
+                                    <p class="title">외출용 에코 아이템</p>
+                                    <p class="text">밖에서도 환경을 생각하는 아이템</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bot-banner">
+            <div class="banner">
+                <div class="inner">
+                    <h3>제로웨이스트를 만나는 가장 가까운 길</h3>
+                    <p class="text">제로웨이스트샵 / 리필스테이션 위치 안내</p>
+                    <button class="btn_click">
+                        <a href="https://map.seoul.go.kr/smgis2/short/6PrHX" target="_blank">클릭하기</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="inner">
+            <div class="top">
+                <div class="slogan">
+                    지구를 위한 작은 ON,<br>
+                    우리의 DO가 세상을 바꿉니다.
+                </div>
+                <ul class="gnb">
+                    <li><a href="" class="privacy">개인정보처리방침</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="ondo_dacu.html">온도뉴스</a></li>
+                    <li><a href="ondo_tip.html">분리배출</a></li>
+                    <li><a href="ondo_zerowaste.html">제로웨이스트</a></li>
+                    <li><a href="ondo_campaign.html">캠페인</a></li>
+                    <li><a href="ondo_pointshop.html">포인트샵</a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <img src="img/main_logo_w.png" alt="">
+                <span>&copy; 2025. ONDO All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 개인정보처리방침 모달 -->
+    <div id="privacyModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="policy" lang="ko">
+                <h1>온도 개인정보 처리방침(안)</h1>
+
+                <p>'온도'(이하 "회사")는 개인정보 보호법 제30조에 따라 이용자의 개인정보를 보호하고 권익을 보장하며, 개인정보와 관련한 이용자의 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보 처리방침을 수립·공개합니다.</p>
+
+                <!-- 목차(선택) -->
+                <nav class="policy-toc" aria-label="목차">
+                    <ol>
+                        <li><a href="#article1">제1조(개인정보의 처리 목적)</a></li>
+                        <li><a href="#article2">제2조(처리하는 개인정보 항목)</a></li>
+                        <li><a href="#article3">제3조(개인정보의 처리 및 보유기간)</a></li>
+                        <li><a href="#article4">제4조(개인정보의 제3자 제공)</a></li>
+                        <li><a href="#article5">제5조(개인정보처리의 위탁)</a></li>
+                        <li><a href="#article6">제6조(정보주체와 법정대리인의 권리·의무 및 행사방법)</a></li>
+                        <li><a href="#article7">제7조(개인정보의 파기)</a></li>
+                        <li><a href="#article8">제8조(개인정보의 안전성 확보조치)</a></li>
+                        <li><a href="#article9">제9조(개인정보 보호책임자)</a></li>
+                        <li><a href="#article10">제10조(권익침해 구제방법)</a></li>
+                        <li><a href="#article11">제11조(개인정보 처리방침 변경)</a></li>
+                    </ol>
+                </nav>
+
+                <hr>
+
+                <section id="article1" class="policy-section">
+                    <h2>제1조(개인정보의 처리 목적)</h2>
+                    <p>회사는 다음의 목적을 위하여 개인정보를 처리하며, 목적 이외의 용도로는 이용하지 않습니다.</p>
+                    <ol>
+                        <li><strong>회원 가입 및 관리</strong>
+                            <ul>
+                                <li>회원가입 의사 확인, 본인 식별·인증, 회원자격 유지·관리, 서비스 부정이용 방지, 각종 고지·통지, 분쟁조정을 위한 기록 보존 등</li>
+                            </ul>
+                        </li>
+                        <li><strong>서비스 제공</strong>
+                            <ul>
+                                <li>콘텐츠 제공, 맞춤형 서비스 제공, 구매 및 결제, 물품배송, 본인인증 등</li>
+                            </ul>
+                        </li>
+                        <li><strong>민원사무 처리</strong>
+                            <ul>
+                                <li>민원인의 신원 확인, 민원사항 확인, 사실조사를 위한 연락·통지, 처리 결과 통보 등</li>
+                            </ul>
+                        </li>
+                        <li><strong>마케팅 및 광고 활용</strong>
+                            <ul>
+                                <li>이벤트 정보 및 참여기회 제공, 광고성 정보 제공, 접속빈도 파악 또는 회원의 서비스 이용에 대한 통계 등</li>
+                            </ul>
+                        </li>
+                        <li><strong>안전한 서비스 환경 구축</strong>
+                            <ul>
+                                <li>보안, 프라이버시, 안전정책 수립 및 개선</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+
+                <hr>
+
+                <section id="article2" class="policy-section">
+                    <h2>제2조(처리하는 개인정보 항목)</h2>
+                    <ol>
+                        <li><strong>회원가입 시 필수항목</strong>: 이름, 이메일, 휴대폰번호, 비밀번호</li>
+                        <li><strong>서비스 이용과정에서 자동생성되는 정보</strong>: IP주소, 쿠키, 서비스 이용기록, 접속로그 등</li>
+                    </ol>
+                </section>
+
+                <hr>
+
+                <section id="article3" class="policy-section">
+                    <h2>제3조(개인정보의 처리 및 보유기간)</h2>
+                    <ol>
+                        <li>회사는 원칙적으로 개인정보 수집·이용 목적이 달성된 후에는 지체 없이 파기합니다.</li>
+                        <li>단, 관련 법령에 따라 일정 기간 보존할 필요가 있는 경우는 아래와 같습니다.
+                            <ul>
+                                <li><strong>계약 또는 청약철회 등에 관한 기록</strong>: 5년 (전자상거래법)</li>
+                                <li><strong>대금결제 및 재화 등의 공급에 관한 기록</strong>: 5년 (전자상거래법)</li>
+                                <li><strong>소비자의 불만 또는 분쟁처리에 관한 기록</strong>: 3년 (전자상거래법)</li>
+                                <li><strong>전자문서 유통에 관한 기록</strong>: 10년 (전자문서법)</li>
+                                <li><strong>로그인 기록</strong>: 3개월 (통신비밀보호법)</li>
+                            </ul>
+                        </li>
+                        <li>별도 동의를 얻은 경우: 휴대전화번호 1년 보관</li>
+                    </ol>
+                </section>
+
+                <hr>
+
+                <section id="article4" class="policy-section">
+                    <h2>제4조(개인정보의 제3자 제공)</h2>
+                    <p>회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 이용자의 동의가 있거나 법령에 특별한 규정이 있는 경우에는 예외로 합니다.</p>
+                </section>
+
+                <hr>
+
+                <section id="article5" class="policy-section">
+                    <h2>제5조(개인정보처리의 위탁)</h2>
+                    <p>회사는 원활한 개인정보 업무처리를 위하여 외부 전문업체에 위탁할 수 있으며, 위탁 시 법령에 따라 위탁업무 범위, 재위탁 제한, 수탁자의 관리·감독 등을 계약서에 명시합니다. <em>(현재 개인정보 처리 위탁사항은 없습니다)</em></p>
+                </section>
+
+                <hr>
+
+                <section id="article6" class="policy-section">
+                    <h2>제6조(정보주체와 법정대리인의 권리·의무 및 행사방법)</h2>
+                    <ol>
+                        <li>이용자는 개인정보 열람, 정정·삭제, 처리정지 요구 등의 권리를 행사할 수 있습니다.</li>
+                        <li>권리 행사는 서면, 이메일 등을 통해 가능하며 회사는 이에 대해 지체 없이 조치합니다.</li>
+                        <li>만 14세 미만 아동은 법정대리인을 통해 권리를 행사할 수 있습니다.</li>
+                    </ol>
+                </section>
+
+                <hr>
+
+                <section id="article7" class="policy-section">
+                    <h2>제7조(개인정보의 파기)</h2>
+                    <ol>
+                        <li>회사는 개인정보 보유기간이 경과하거나 처리 목적이 달성된 경우 지체 없이 해당 개인정보를 파기합니다.</li>
+                        <li>파기방법: 전자적 파일은 복구 불가능한 기술적 방법으로, 종이 문서는 분쇄기로 파쇄합니다.</li>
+                    </ol>
+                </section>
+
+                <hr>
+
+                <section id="article8" class="policy-section">
+                    <h2>제8조(개인정보의 안전성 확보조치)</h2>
+                    <ul>
+                        <li>관리적 조치: 내부관리계획 수립, 정기적 직원 교육</li>
+                        <li>기술적 조치: 개인정보처리시스템 접근권한 관리, 보안프로그램 설치, 암호화 등</li>
+                        <li>물리적 조치: 전산실, 자료보관실 등의 접근통제</li>
+                    </ul>
+                </section>
+
+                <hr>
+
+                <section id="article9" class="policy-section">
+                    <h2>제9조(개인정보 보호책임자)</h2>
+                    <ol>
+                        <li>회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.</li>
+                    </ol>
+                    <ul>
+                        <li><strong>개인정보 보호책임자</strong>: 김온도/경영지원 팀장</li>
+                        <li><strong>연락처</strong>: 010-1234-1234, ondo@ondo.com</li>
+                    </ul>
+                    <p>이용자는 회사의 서비스를 이용하며 발생하는 모든 개인정보 보호 관련 문의, 불만처리, 피해구제 등에 관하여 개인정보 보호책임자에게 문의할 수 있습니다.</p>
+                </section>
+
+                <hr>
+
+                <section id="article10" class="policy-section">
+                    <h2>제10조(권익침해 구제방법)</h2>
+                    <ul>
+                        <li>개인정보침해신고센터 (privacy.kisa.or.kr / 국번없이 118)</li>
+                        <li>개인정보분쟁조정위원회 (kopico.go.kr / 1833-6972)</li>
+                        <li>대검찰청 사이버수사과 (spo.go.kr / 국번없이 1301)</li>
+                        <li>경찰청 사이버안전국 (cyberbureau.police.go.kr / 국번없이 182)</li>
+                    </ul>
+                </section>
+
+                <hr>
+
+                <section id="article11" class="policy-section">
+                    <h2>제11조(개인정보 처리방침 변경)</h2>
+                    <p>이 개인정보 처리방침은 시행일로부터 적용되며, 법령·지침 변경이나 회사 정책 변경에 따라 내용이 추가·삭제·수정될 수 있습니다. 변경 시에는 웹사이트 공지사항을 통하여 공지합니다.</p>
+                    <p><strong>시행일자</strong>: 2025년 9월 1일</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
