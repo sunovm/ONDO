@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <p class="pro-name">${p.name}</p>
                         </div>
                         <div class="price-area">
-                            <img src="img/Light Bulb.png" alt="">
+                            <img src="img/light_bulb.png" alt="">
                             <p class="price">${p.price}p</p>
                         </div>
                     </a>
