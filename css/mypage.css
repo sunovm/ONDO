@@ -6,7 +6,7 @@
 
 .mypage-head {
     height: 9.375rem;
-    background: var(--color-gray03);
+    background: var(--color-gray02);
     border-radius: var(--border-radius);
     color: var(--color-black02);
     padding: 3.125rem 5rem;
@@ -20,13 +20,13 @@
     display: flex;
     align-items: center;
     text-align: center;
-    gap: 2.188rem;
+    gap: 1.5rem;
     z-index: 1;
 }
 
 .profile-image {
-    width: 5rem;
-    height: 5rem;
+    width: 5.5rem;
+    height: 5.5rem;
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -36,7 +36,7 @@
 }
 
 .profile-image img {
-    width: 95%;
+    width: 97%;
     transform: translateY(0.3rem);
 }
 
@@ -210,14 +210,15 @@
 
 .points-table td:last-child span {
     color: var(--color-black01);
-    background: var(--color-gray03);
+    background: var(--color-gray02);
     border-radius: var(--border-radius);
     padding: 0.5rem 1.25rem;
     display: inline-block;
+    transition: 0.3s;
 }
 
 .points-table td:last-child span:hover {
-    background: var(--color-gray02);
+    background: var(--color-point01);
 }
 
 .points-table td:nth-child(3) {
